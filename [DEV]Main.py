@@ -4,7 +4,7 @@ MAIN_VARIABLES = {
     'MINIMUM_HOURS' : 1
 }
 
-this_test = False
+this_test = True
 
 import discord
 import requests
