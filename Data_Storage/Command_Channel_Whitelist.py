@@ -29,6 +29,12 @@ Command_Channel_Whitelists = {
             865637391808724992, #Bot Commands
         ]
     },
+    'Hours' : {
+        'SERVER_CHANNEL': True,
+        'CHANNELS': [
+            865637391808724992, #Bot Commands
+        ]
+    },
     'Link' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [

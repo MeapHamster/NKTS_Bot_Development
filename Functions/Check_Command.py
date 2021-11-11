@@ -46,7 +46,7 @@ def Check_Command(message, prefix, Channel_Whitelist, Command_Whitelists, comman
                 Sent_By_Whitelisted_User = True
 
         if Command_Whitelists[command]['All Users'] == True:
-                Sent_By_Whitelisted_User = True
+            Sent_By_Whitelisted_User = True
         
         if Sent_In_Whitelisted_Channel == False:
             print('Command invoked in unwhitelisted Channel')

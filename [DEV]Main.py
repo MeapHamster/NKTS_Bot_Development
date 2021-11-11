@@ -24,6 +24,7 @@ from Modules.Hour_Reduction import cmd_Hour_Reduction_Invoked
 from Modules.Hours_All import cmd_Hours_All_Invoked
 from Modules.Hours_Clear import cmd_Hours_Clear_Invoked
 from Modules.Hours_Me import cmd_Hours_Me_Invoked
+from Modules.Hours_User import cmd_Hours_User_Invoked
 from Modules.Link import cmd_Link_Invoked
 from Modules.Link_Roblox import cmd_Link_Roblox_Invoked
 from Modules.Link_Email import cmd_Link_Email_Invoked
@@ -58,5 +59,6 @@ async def on_message(message):
     await cmd_Link_Email_Invoked(Variables)
     await cmd_Email_Invoked(Variables)
     await cmd_Verify_Code_Invoked(Variables)
+    await cmd_Hours_User_Invoked(Variables)
 
 client.run('ODI5NDc5MTI3MTg1NzUyMDk0.YG4uog.Uwl00sM0g1mKYVbT-iMVN1inaL0')

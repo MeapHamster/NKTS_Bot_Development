@@ -9,7 +9,7 @@ Command_Whitelists = {
             # Use Discord User IDs
             706382894641315902, # MeapHamster
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': False
     },
 
@@ -22,7 +22,7 @@ Command_Whitelists = {
             # Use Discord User IDs
             706382894641315902, # MeapHamster
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': True
     },
 
@@ -36,7 +36,7 @@ Command_Whitelists = {
             647933127221837824, # MXJJJJ,
             751486884315660349, # notallanbtw
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': True
     },
 
@@ -50,7 +50,7 @@ Command_Whitelists = {
             647933127221837824, # MXJJJJ,
             751486884315660349, # notallanbtw
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': True
     },
 
@@ -64,7 +64,7 @@ Command_Whitelists = {
             647933127221837824, # MXJJJJ,
             751486884315660349, # notallanbtw
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': True
     },
 
@@ -77,8 +77,21 @@ Command_Whitelists = {
             # Use Discord User IDs
             706382894641315902, # MeapHamster
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': True
+    },
+
+    'Hours' : {
+        'Roles' : [
+            # Use Role IDs
+            763986008596414495, # Employee Role
+        ],
+        'Users' : [
+            # Use Discord User IDs
+            706382894641315902, # MeapHamster
+        ],
+        'All Users': False,
+        'Exact Command': False
     },
 
     'Link' : {
@@ -151,7 +164,7 @@ Command_Whitelists = {
             751486884315660349, # notallanbtw
             873002309435654154, # Yourhairlineisamess
         ],
-        'All Users': True,
+        'All Users': False,
         'Exact Command': False
     },
 
