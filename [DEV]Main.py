@@ -32,7 +32,7 @@ from Modules.Verify_Code import cmd_Verify_Code_Invoked
 intents = discord.Intents.default()
 intents.members = True
 
-#Client Connect
+#  Client Connect
 client = discord.Client(intents=intents)
 
 @client.event
