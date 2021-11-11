@@ -5,8 +5,6 @@ MAIN_VARIABLES = {
 }
 
 import discord
-import requests
-import time
 
 #  Data Storage
 from Data_Storage.Command_Channel_Whitelist import Command_Channel_Whitelists
