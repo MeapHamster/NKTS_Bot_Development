@@ -24,8 +24,9 @@ async def cmd_Hours_User_Invoked(Variables):
     message_txt = message.content
     if Check_Command(message, MAIN_VARIABLES['PREFIX'], Channel_Whitelist, Command_Whitelists, 'Hours') == True:
         User_Data_Cards = Get_User_Data_Cards(Trello_Data)
-        User_ID = message_txt.split('<@')[1].split('>')[0]
+        User_ID = message_txt.split('<@!')[1].split('>')[0]
         User_NAME = ''
+        print(User_ID)
         for Card in User_Data_Cards:
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == User_ID:
                 User_NAME = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
@@ -37,11 +38,12 @@ async def cmd_Hours_User_Invoked(Variables):
             ).text
         )
         for Card in Hour_Logs_Cards:
+            print(Card['name'])
             if Card['name'] == User_NAME:
                 embed = discord.Embed(
                     title = 'NKTS Hour Logs',
                     colour = discord.Colour.gold()
                 )
                 embed.set_footer(text = '• NKTS Hour Logs')
-                embed.add_field(name = 'Logged Hours', value = Card['desc'].split('Hours Logged: ')[1], inline = False)
+                embed.add_field(name = 'Logged Hours for ' + User_NAME, value = Card['desc'].split('Hours Logged: ')[1], inline = False)
                 await Channel.send(embed = embed)
