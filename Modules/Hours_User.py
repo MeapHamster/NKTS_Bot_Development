@@ -25,7 +25,7 @@ async def cmd_Hours_User_Invoked(Variables):
     if Check_Command(message, MAIN_VARIABLES['PREFIX'], Channel_Whitelist, Command_Whitelists, 'Hours') == True:
         User_Data_Cards = Get_User_Data_Cards(Trello_Data)
         User_ID = message_txt.split('<@')[1].split('>')[0]
-        User_NAME
+        User_NAME = ''
         for Card in User_Data_Cards:
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == User_ID:
                 User_NAME = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
