@@ -1,6 +1,6 @@
 #  Main Variables
 MAIN_VARIABLES = {
-    'PREFIX' : '%',
+    'PREFIX' : '!',
     'MINIMUM_HOURS' : 1
 }
 
