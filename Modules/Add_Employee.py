@@ -14,7 +14,7 @@ async def cmd_Add_Employee_Invoked(Variables):
     # Variables #
     Channel = client.get_channel(message.channel.id)
     message_txt = message.content
-    if Check_Command(message, MAIN_VARIABLES['PREFIX'], Channel_Whitelist, Command_Whitelists, 'Add Emplyee') == True:
+    if Check_Command(message, MAIN_VARIABLES['PREFIX'], Channel_Whitelist, Command_Whitelists, 'Add Employee') == True:
         UserDataCards = Get_User_Data_Cards(Trello_Data)
         User_ID = message_txt.split('<@!')[1].split('>')[0]
         Found_Data_Card = False
