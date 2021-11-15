@@ -32,8 +32,8 @@ async def cmd_Link_Roblox_Invoked(Variables):
                     'key': Trello_Data['TRELLO_KEY'],
                     'token': Trello_Data['TRELLO_TOKEN'],
                     'idList': Trello_Data['User_Data_Cards']['POST']['IDLIST'],
-                    'name': username,
-                    'desc': 'Discord_User_ID:' + str(message.author.id) + '\nRoblox_Username:' + username + '\nEmail_Address:\nPhone_Number:'
+                    'name': Username,
+                    'desc': 'Discord_User_ID:' + str(message.author.id) + '\nRoblox_Username:' + Username + '\nEmail_Address:\nPhone_Number:'
                 }
             ).text
             if Create_User_Data_Card == '200':

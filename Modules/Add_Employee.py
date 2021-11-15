@@ -40,10 +40,20 @@ async def cmd_Add_Employee_Invoked(Variables):
                     headers = Trello_Data['Employee_Tracker_Management']['GET']['HEADERS']
                 ).text
             )
+            Training_Cards = json.loads(
+                requests.request(
+                    'GET',
+                    Trello_Data['Employee_Tracker_Training']['GET']['URL'],
+                    headers = Trello_Data['Employee_Tracker_Training']['GET']['HEADERS']
+                ).text
+            )
             for Card in Employee_Cards:
                 if Card['name'] == Username:
                     Already_Employee = True
             for Card in Management_Cards:
+                if Card['name'] == Username:
+                    Already_Employee = True
+            for Card in Training_Cards:
                 if Card['name'] == Username:
                     Already_Employee = True
             if Already_Employee == False:
@@ -62,8 +72,24 @@ async def cmd_Add_Employee_Invoked(Variables):
                 JsonDecoded = json.loads(Create_Training_Card)
                 embed = discord.Embed(
                     title = 'NKTS Employee Tracker',
-                    description = '**Employee Added:**\n' + Username + '\n\n' + JsonDecoded['url'],
+                    description = '**Employee Added:**\n<@!' + str(User_ID) + '>\n' + JsonDecoded['url'],
                     colour = discord.Colour.gold()
                 )
                 embed.set_footer(text = '• NKTS Employee Tracker')
                 await Channel.send(embed = embed)
+            else:
+                embed = discord.Embed(
+                    title = 'NKTS Employee Tracker',
+                    description = 'Looks like this user already has an employee card!',
+                    colour = discord.Colour.red()
+                )
+                embed.set_footer(text = '• NKTS Employee Tracker')
+                await Channel.send(embed = embed)
+        else:
+            embed = discord.Embed(
+                title = 'NKTS Employee Tracker',
+                description = 'This user has not verified their Roblox account!\nTry running `!Link Roblox` in <#865637391808724992>',
+                colour = discord.Colour.red()
+            )
+            embed.set_footer(text = '• NKTS Employee Tracker')
+            await Channel.send(embed = embed)
