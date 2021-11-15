@@ -71,4 +71,16 @@ Command_Channel_Whitelists = {
             
         ]
     },
+    'View Data' : {
+        'SERVER_CHANNEL': False,
+        'CHANNELS': [
+            
+        ]
+    },
+    'Erase Data' : {
+        'SERVER_CHANNEL': False,
+        'CHANNELS': [
+            
+        ]
+    },
 }

@@ -153,6 +153,28 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
+    'View Data' : {
+        'Roles' : [
+            # Use Role IDs
+        ],
+        'Users' : [
+            # Use Discord User IDs
+        ],
+        'All Users': True,
+        'Exact Command': False
+    },
+
+    'Erase Data' : {
+        'Roles' : [
+            # Use Role IDs
+        ],
+        'Users' : [
+            # Use Discord User IDs
+        ],
+        'All Users': True,
+        'Exact Command': False
+    },
+
     'Add Employee' : {
         'Roles' : [
             # Use Role IDs
