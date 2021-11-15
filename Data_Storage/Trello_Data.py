@@ -46,6 +46,17 @@ Trello_Data = {
         }
     },
 
+    'Employee_Tracker_Training' : {
+        'GET' : {
+            'URL' : 'https://api.trello.com/1/lists/602888d31e888057782dc4ff/cards',
+            'HEADERS' : {"Accept": "application/json"}
+        },
+        'POST' : {
+            'URL' : 'https://api.trello.com/1/cards',
+            'IDLIST' : '602888d31e888057782dc4ff'
+        }
+    },
+
     'Inactivity_Notice' : {
         'GET' : {
             'URL' : 'https://api.trello.com/1/lists/5fad4fbefd414951d6251d90/cards',
