@@ -28,6 +28,7 @@ from Modules.Link_Roblox import cmd_Link_Roblox_Invoked
 from Modules.Link_Email import cmd_Link_Email_Invoked
 from Modules.Email import cmd_Email_Invoked
 from Modules.Verify_Code import cmd_Verify_Code_Invoked
+from Modules.Add_Employee import cmd_Add_Employee_Invoked
 
 intents = discord.Intents.default()
 intents.members = True
@@ -58,5 +59,6 @@ async def on_message(message):
     await cmd_Email_Invoked(Variables)
     await cmd_Verify_Code_Invoked(Variables)
     await cmd_Hours_User_Invoked(Variables)
+    await cmd_Add_Employee_Invoked(Variables)
 
 client.run('ODI5NDc5MTI3MTg1NzUyMDk0.YG4uog.Uwl00sM0g1mKYVbT-iMVN1inaL0')
