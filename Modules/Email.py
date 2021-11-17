@@ -73,6 +73,7 @@ async def cmd_Email_Invoked(Variables):
                                         colour = discord.Colour.gold()
                                     )
                                     await Channel.send(embed = embed)
+                                    return
                                 Email = server.sendmail(email, Email_Address, 'Use the code below to verify that the email address you provided is yours!\n\n' + Random_Verification_Code)
                                 if len(Email) == 0:
                                     embed = discord.Embed(
