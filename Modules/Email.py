@@ -7,6 +7,7 @@ import smtplib, ssl
 
 port = 465
 context = ssl.create_default_context() # Creates a secure SSL context
+email = 'newkemptontaxiservice@gmail.com'
 password = 'nkts$2005'
 
 async def Error(Channel, Error_Message):
@@ -62,8 +63,8 @@ async def cmd_Email_Invoked(Variables):
 
                         if Create_Verification_Code_Card != '200':
                             with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
-                                server.login('newkemptontaxiservice@gmail.com', password)
-                                Email = server.sendmail('newkemptontaxiservice@gmail.com', Email_Address, 'Use the code below to verify that the email address you provided is yours!\n\n' + Random_Verification_Code)
+                                server.login(email, password)
+                                Email = server.sendmail(email, Email_Address, 'Use the code below to verify that the email address you provided is yours!\n\n' + Random_Verification_Code)
                                 if len(Email) == 0:
                                     embed = discord.Embed(
                                         title = 'Verification email sent!',
