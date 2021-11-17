@@ -190,4 +190,19 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
+    'Fire Employee' : {
+        'Roles' : [
+            # Use Role IDs
+        ],
+        'Users' : [
+            # Use Discord User IDs
+            706382894641315902, # MeapHamster
+            647933127221837824, # MXJJJJ,
+            751486884315660349, # notallanbtw
+            873002309435654154, # Yourhairlineisamess
+        ],
+        'All Users': False,
+        'Exact Command': False
+    },
+
 }
