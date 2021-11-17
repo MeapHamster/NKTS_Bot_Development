@@ -95,7 +95,7 @@ async def cmd_Email_Invoked(Variables):
                             colour = discord.Colour.gold()
                         )
                         embed.set_footer(text = '• NKTS')
-                        await DM_Channel.send(embed = embed)
+                        await Channel.send(embed = embed)
                 else:
                     embed = discord.Embed(
                         title = 'Whoops!',
@@ -103,4 +103,4 @@ async def cmd_Email_Invoked(Variables):
                         colour = discord.Colour.gold()
                     )
                     embed.set_footer(text = '• NKTS')
-                    await DM_Channel.send(embed = embed)
+                    await Channel.send(embed = embed)
