@@ -62,33 +62,33 @@ async def cmd_Email_Invoked(Variables):
                         ).text
 
                         if Create_Verification_Code_Card != '200':
-                            try:
-                                with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
+                            with smtplib.SMTP_SSL('smtp.gmail.com', port, context=context) as server:
+                                try:
                                     server.login(email, password)
-                                    Email = server.sendmail(email, Email_Address, 'Use the code below to verify that the email address you provided is yours!\n\n' + Random_Verification_Code)
-                                    if len(Email) == 0:
-                                        embed = discord.Embed(
-                                            title = 'Verification email sent!',
-                                            description = 'Retrieve the code from the inbox of ' + Email_Address + '\n\nUse the command `!Verify Code [Code]` in my DMs to complete the process.',
-                                            colour = discord.Colour.gold()
-                                        )
-                                        embed.set_footer(text = '• NKTS')
-                                        await Channel.send(embed = embed)
-                                    else:
-                                        embed = discord.Embed(
-                                            title = 'Hmm... something doesn\'t look right',
-                                            description = 'The address you provided isn\'t working! Try another email address or contact support.',
-                                            colour = discord.Colour.gold()
-                                        )
-                                        await Channel.send(embed = embed)
-                            except:
-                                raise Warning('Couldn\'t sign into email account.')
-                                embed = discord.Embed(
-                                    title = 'Well this wasn\'t supposed to happen....',
-                                    description = 'Looks like the engine room is on fire.',
-                                    colour = discord.Colour.gold()
-                                )
-                                await Channel.send(embed = embed)
+                                except:
+                                    print('Couldn\'t sign into email account.')
+                                    embed = discord.Embed(
+                                        title = 'Well this wasn\'t supposed to happen....',
+                                        description = 'Looks like the engine room is on fire.',
+                                        colour = discord.Colour.gold()
+                                    )
+                                    await Channel.send(embed = embed)
+                                Email = server.sendmail(email, Email_Address, 'Use the code below to verify that the email address you provided is yours!\n\n' + Random_Verification_Code)
+                                if len(Email) == 0:
+                                    embed = discord.Embed(
+                                        title = 'Verification email sent!',
+                                        description = 'Retrieve the code from the inbox of ' + Email_Address + '\n\nUse the command `!Verify Code [Code]` in my DMs to complete the process.',
+                                        colour = discord.Colour.gold()
+                                    )
+                                    embed.set_footer(text = '• NKTS')
+                                    await Channel.send(embed = embed)
+                                else:
+                                    embed = discord.Embed(
+                                        title = 'Hmm... something doesn\'t look right',
+                                        description = 'The address you provided isn\'t working! Try another email address or contact support.',
+                                        colour = discord.Colour.gold()
+                                    )
+                                    await Channel.send(embed = embed)
                         else:
                             embed = discord.Embed(
                                 title = 'You blew up the internet',
