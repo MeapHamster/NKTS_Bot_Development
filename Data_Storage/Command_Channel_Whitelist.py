@@ -17,6 +17,12 @@ Command_Channel_Whitelists = {
             714573399158161561, #General
         ]
     },
+    'Fire Employee' : {
+        'SERVER_CHANNEL': True,
+        'CHANNELS': [
+            714573399158161561, #General
+        ]
+    },
     'Hours All' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
