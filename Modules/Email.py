@@ -100,7 +100,7 @@ async def cmd_Email_Invoked(Variables):
                     else:
                         embed = discord.Embed(
                             title = 'Oh no! An error message!',
-                            description = 'You already have an email address linked! Contact an administrator for helP!',
+                            description = 'You already have an email address linked! Contact an administrator for help!',
                             colour = discord.Colour.gold()
                         )
                         embed.set_footer(text = '• NKTS')
