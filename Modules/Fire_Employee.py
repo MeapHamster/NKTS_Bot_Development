@@ -2,7 +2,7 @@ import discord
 import requests
 import json
 
-async def cmd_Add_Employee_Invoked(Variables):
+async def cmd_Fire_Employee_Invoked(Variables):
     # Variables #
     client              = Variables['client']
     message             = Variables['message']
