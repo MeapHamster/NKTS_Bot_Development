@@ -31,7 +31,7 @@ from Modules.Verify_Code import cmd_Verify_Code_Invoked
 from Modules.Add_Employee import cmd_Add_Employee_Invoked
 from Modules.View_Data import cmd_View_Data_Invoked
 from Modules.Erase_Data import cmd_Erase_Data_Invoked
-from MOdules.Fire_Employee import cmd_Fire_Employee_Invoked
+from Modules.Fire_Employee import cmd_Fire_Employee_Invoked
 
 intents = discord.Intents.default()
 intents.members = True
