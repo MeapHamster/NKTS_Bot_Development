@@ -40,12 +40,23 @@ async def cmd_Fire_Employee_Invoked(Variables):
                     headers = Trello_Data['Employee_Tracker_Management']['GET']['HEADERS']
                 ).text
             )
+            Training_Cards = json.loads(
+                requests.request(
+                    'GET',
+                    Trello_Data['Employee_Tracker_Training']['GET']['URL'],
+                    headers = Trello_Data['Employee_Tracker_Training']['GET']['HEADERS']
+                ).text
+            )
             Employee_Card = ''
             for Card in Employee_Cards:
                 if Card['name'] == Username:
                     Employee_Card = Card['id']
             if Employee_Card == '':
                 for Card in Management_Cards:
+                    if Card['name'] == Username:
+                        Employee_Card = Card['id']
+            if Employee_Card == '':
+                for Card in Training_Cards:
                     if Card['name'] == Username:
                         Employee_Card = Card['id']
             if Employee_Card != '':
