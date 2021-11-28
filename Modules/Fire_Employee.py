@@ -62,11 +62,11 @@ async def cmd_Fire_Employee_Invoked(Variables):
                     description = 'Employee: ' + Username,
                     colour = discord.Colour.red()
                 )
-                await Send_Channel.send(embed = embed)
+                await Channel.send(embed = embed)
             else:
                 embed = discord.Embed(
                     title = 'Bruh... that guy isn\'t employed',
                     description = 'User: ' + Username,
                     colour = discord.Colour.red()
                 )
-                await Send_Channel.send(embed = embed)
+                await Channel.send(embed = embed)
