@@ -25,6 +25,7 @@ async def cmd_Add_Employee_Invoked(Variables):
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == User_ID:
                 Username = Card['name']
                 Found_Data_Card = True
+        print(Username)
         if Found_Data_Card == True:
             Employee_Cards = json.loads(
                 requests.request(
