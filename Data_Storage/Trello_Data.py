@@ -56,6 +56,17 @@ Trello_Data = {
             'IDLIST' : '602888d31e888057782dc4ff'
         }
     },
+    
+    'Employee_Tracker_Driving_Certificates' : {
+        'GET' : {
+            'URL' : 'https://api.trello.com/1/lists/605fa1504f7817085be4f72d/cards',
+            'HEADERS' : {"Accept": "application/json"}
+        },
+        'POST' : {
+            'URL' : 'https://api.trello.com/1/cards',
+            'IDLIST' : '605fa1504f7817085be4f72d'
+        }
+    },
 
     'Inactivity_Notice' : {
         'GET' : {

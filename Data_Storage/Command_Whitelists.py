@@ -205,4 +205,17 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
+    'Driving Test' : {
+        'Roles' : [
+            # Use Role IDs
+            763986008596414495, # Employee Role
+        ],
+        'Users' : [
+            # Use Discord User IDs
+            706382894641315902, # MeapHamster
+        ],
+        'All Users': False,
+        'Exact Command': False
+    },
+
 }
