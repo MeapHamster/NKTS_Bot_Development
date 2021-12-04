@@ -2,13 +2,6 @@ import discord
 import requests
 import json
 
-New_Employee_Roles = [
-    768584645494833193, # [T] Taxi Driver
-    763985954435629067, # Employee In Training
-    770023349656485948, # Classroom Needed
-    763985886446485504,  # Uncertified Driver
-]
-
 async def cmd_Add_Employee_Invoked(Variables):
     # Variables #
     client              = Variables['client']
