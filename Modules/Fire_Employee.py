@@ -74,6 +74,34 @@ async def cmd_Fire_Employee_Invoked(Variables):
                     colour = discord.Colour.red()
                 )
                 await Channel.send(embed = embed)
+                Roles = [
+                    discord.utils.get(message.guild.roles, name = 'Supervisor'),
+                    discord.utils.get(message.guild.roles, name = 'Division Manager'),
+                    discord.utils.get(message.guild.roles, name = 'Head Driving Instructor'),
+                    discord.utils.get(message.guild.roles, name = 'Training Manager'),
+                    discord.utils.get(message.guild.roles, name = 'Driving Instructor'),
+                    discord.utils.get(message.guild.roles, name = 'Classroom Instructor'),
+                    discord.utils.get(message.guild.roles, name = 'Head of Piloting'),
+                    discord.utils.get(message.guild.roles, name = 'Taxi Pilot'),
+                    discord.utils.get(message.guild.roles, name = 'Head of Boating'),
+                    discord.utils.get(message.guild.roles, name = 'Ferry Captain'),
+                    discord.utils.get(message.guild.roles, name = 'Ferry Crew'),
+                    discord.utils.get(message.guild.roles, name = 'Taxi Driver'),
+                    discord.utils.get(message.guild.roles, name = 'Custodial Manager'),
+                    discord.utils.get(message.guild.roles, name = 'Custodian'),
+                    discord.utils.get(message.guild.roles, name = 'Front Desk Manager'),
+                    discord.utils.get(message.guild.roles, name = 'Front Desk'),
+                    discord.utils.get(message.guild.roles, name = 'Marketing Manager'),
+                    discord.utils.get(message.guild.roles, name = 'Employee'),
+                    discord.utils.get(message.guild.roles, name = '[T] Taxi Driver'),
+                    discord.utils.get(message.guild.roles, name = '[T] Front Desk'),
+                    discord.utils.get(message.guild.roles, name = '[T] Custodian'),
+                    discord.utils.get(message.guild.roles, name = 'Employee in Training'),
+                    discord.utils.get(message.guild.roles, name = 'Pilot in Training'),
+                    discord.utils.get(message.guild.roles, name = 'Uncertified Driver'),
+                    discord.utils.get(message.guild.roles, name = 'Classroom Needed'),
+                ]
+                await message.author.remove_roles(*Roles)
             else:
                 embed = discord.Embed(
                     title = 'Bruh... that guy isn\'t employed',
