@@ -55,7 +55,7 @@ async def cmd_Driving_Test_Invoked(Variables):
 
                 if len(response) > 0:
                     if response[0]['value']['text'] == Username:
-                        User_Driving_Tests = (f"{User_Driving_Tests}{Card['name']}\n - {Card['shortUrl']}\n")
+                        User_Driving_Tests = (f"{User_Driving_Tests}[{Card['name']}]({Card['shortUrl']})\n")
             
             if User_Driving_Tests != '':
                 embed = discord.Embed(
