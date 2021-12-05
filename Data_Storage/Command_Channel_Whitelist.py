@@ -14,31 +14,31 @@ Command_Channel_Whitelists = {
     'Add Employee' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
-            714573399158161561, #General
+            714674118984990834, #General
         ]
     },
     'Fire Employee' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
-            714573399158161561, #General
+            714674118984990834, #General
         ]
     },
     'Driving Test' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
-            714573399158161561, #General
+            714674118984990834, #General
         ]
     },
     'Hours All' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
-            714573399158161561, #General
+            714674118984990834, #General
         ]
     },
     'Hours Clear' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
-            714573399158161561, #General
+            714674118984990834, #General
         ]
     },
     'Hours Me' : {
