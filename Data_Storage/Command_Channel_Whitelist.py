@@ -29,6 +29,12 @@ Command_Channel_Whitelists = {
             714674118984990834, #General
         ]
     },
+    'User Info' : {
+        'SERVER_CHANNEL': True,
+        'CHANNELS': [
+            714674118984990834, #General
+        ]
+    },
     'Hours All' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [

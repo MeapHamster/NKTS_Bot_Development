@@ -218,4 +218,17 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
+    'User INfo' : {
+        'Roles' : [
+            # Use Role IDs
+            
+        ],
+        'Users' : [
+            # Use Discord User IDs
+            706382894641315902, # MeapHamster
+        ],
+        'All Users': True,
+        'Exact Command': False
+    },
+
 }
