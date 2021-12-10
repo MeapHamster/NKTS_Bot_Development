@@ -13,7 +13,7 @@ async def cmd_View_Data_Invoked(Variables):
     Get_User_Data_Cards = Variables['Get_User_Data_Cards']
     Trello_Data         = Variables['Trello_Data']
     # Variables #
-    Channel = client.get_channel(message.channel.id)
+    DM_Channel = await message.author.create_dm()
     message_txt = message.content
     if Check_Command(message, MAIN_VARIABLES['PREFIX'], Channel_Whitelist, Command_Whitelists, 'View Data') == True:
         User_Data_Cards = Get_User_Data_Cards(Trello_Data)
@@ -29,7 +29,7 @@ async def cmd_View_Data_Invoked(Variables):
                 embed.add_field(name = 'Discord User ID', value = Card['desc'].split('Discord_User_ID:')[1].split('\n')[0], inline = False)
                 embed.add_field(name = 'Roblox Username', value = Card['desc'].split('Roblox_Username:')[1].split('\n')[0], inline = False)
                 embed.add_field(name = 'Email Address', value = Card['desc'].split('Email_Address:')[1].split('\n')[0], inline = False)
-                await Channel.send(embed = embed)
+                await DM_Channel.send(embed = embed)
         if Found_User_Data_Card == False:
             embed = discord.Embed(
                 title = 'You blew up the internet.',
@@ -37,4 +37,4 @@ async def cmd_View_Data_Invoked(Variables):
                 colour = discord.Colour.gold()
             )
             embed.set_footer(text = '• NKTS')
-            await Channel.send(embed = embed)
+            await DM_Channel.send(embed = embed)
