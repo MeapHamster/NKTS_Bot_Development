@@ -41,4 +41,4 @@ async def cmd_Link_Roblox_Invoked(Variables):
             else:
                 await Channel.send('Success!')
         else:
-            await Channel.send('Card already exists for user!')
+            await Channel.send('Data already exists for user!')
