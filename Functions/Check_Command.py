@@ -8,7 +8,6 @@ def Check_Command(message, prefix, Channel_Whitelist, Command_Whitelists, comman
         return False
 
     if message.author.bot:
-        print('Bot sent message')
         return False
 
     Correct_Command = False
