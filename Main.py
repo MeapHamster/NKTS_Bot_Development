@@ -4,6 +4,8 @@ MAIN_VARIABLES = {
     'MINIMUM_HOURS' : 1
 }
 
+print('ONLINE')
+
 import discord
 
 #  Data Storage
