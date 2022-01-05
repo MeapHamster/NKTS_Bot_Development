@@ -73,4 +73,4 @@ async def on_message(message):
     await cmd_Fire_Employee_Invoked(Variables)
     await cmd_Driving_Test_Invoked(Variables)
 
-#client.run('ODI5NDc5MTI3MTg1NzUyMDk0.YG4uog.Uwl00sM0g1mKYVbT-iMVN1inaL0')
+client.run('ODI5NDc5MTI3MTg1NzUyMDk0.YG4uog.0FOEMiZKJ7WyDfGpwGHbcufMFBI')
