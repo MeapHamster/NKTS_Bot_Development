@@ -63,7 +63,7 @@ async def cmd_Hours_Clear_Invoked(Variables):
         for Employee in EMPLOYEES:
             LOGGED = False
             for User in EMPLOYEES_LOGGED:
-                if User.split('-')[1] == Employee:
+                if User.split(' - ')[0] == Employee:
                     LOGGED = True
             if LOGGED == False:
                 EMPLOYEES_FAILED.append(Employee)
