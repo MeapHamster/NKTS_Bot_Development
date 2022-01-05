@@ -81,7 +81,7 @@ Command_Whitelists = {
         'Exact Command': True
     },
 
-    'Hours' : {
+    'Hours <@!' : {
         'Roles' : [
             # Use Role IDs
             763986008596414495, # Employee Role

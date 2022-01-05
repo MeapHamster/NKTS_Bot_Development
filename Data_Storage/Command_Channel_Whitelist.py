@@ -59,7 +59,7 @@ Command_Channel_Whitelists = {
             Channels['Bot Commands']
         ]
     },
-    'Hours' : {
+    'Hours <@!' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
             Channels['Bot Commands']
