@@ -48,7 +48,6 @@ async def cmd_Hours_Clear_Invoked(Variables):
             EMPLOYEES.append(User['name'])
         for User in Management_Cards:
             EMPLOYEES.append(User['name'])
-        print(EMPLOYEES)
         for Card in Hour_Logs_Cards:
             EMPLOYEES_LOGGED.append(Card['name'] + ' - ' + Card['desc'].split('Hours Logged: ')[1]) # ADD EMPLOYEE TO LIST OF USERS WHO LOGGED
             for User in EMPLOYEES:
