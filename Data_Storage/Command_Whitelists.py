@@ -218,7 +218,7 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
-    'User INfo' : {
+    'User Info' : {
         'Roles' : [
             # Use Role IDs
             

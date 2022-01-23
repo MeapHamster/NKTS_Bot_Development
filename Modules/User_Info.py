@@ -26,3 +26,7 @@ async def cmd_User_Info_Invoked(Variables):
                 Found_Data_Card = True
         if Found_Data_Card == True:
             print('Command Invoked')
+            print('Command Invoked')
+            print('Command Invoked')
+            print('Command Invoked')
+            print('Command Invoked')
