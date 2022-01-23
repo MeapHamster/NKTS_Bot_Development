@@ -47,23 +47,20 @@ async def cmd_Employees_Invoked(Variables):
         for Card in Training_Cards:
             TrainingList.append(Card['name'])
 
-        for User in Training:
-            print(User)
+        Employees_String = ''
+        Training_String = ''
+
+        for User in EmployeeList:
+            Employee_String = Employee_String + User + '/n'
+
+        for User in TrainingList:
+            Training_String = Training_String + User + '/n'
+
+        embed = discord.Embed(
+            title = 'NKTS Employee Tracker',
+            description = '**Employees:**\n<@!' + Employee_String + '\n\nTraining' + Training_String,
+            colour = discord.Colour.gold()
+        )
                 
-            Employees_String = ''
-            Training_String = ''
-
-            for User in EmployeeList:
-                Employee_String = Employee_String + User + '/n'
-
-            for User in TrainingList:
-                Training_String = Training_String + User + '/n'
-
-            embed = discord.Embed(
-                title = 'NKTS Employee Tracker',
-                description = '**Employees:**\n<@!' + Employee_String + '\n\nTraining' + Training_String,
-                colour = discord.Colour.gold()
-            )
-                
-            embed.set_footer(text = '• NKTS Employee Tracker')
-            await Channel.send(embed = embed)
+        embed.set_footer(text = '• NKTS Employee Tracker')
+        await Channel.send(embed = embed)
