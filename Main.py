@@ -33,6 +33,7 @@ from Modules.View_Data import cmd_View_Data_Invoked
 from Modules.Erase_Data import cmd_Erase_Data_Invoked
 from Modules.Fire_Employee import cmd_Fire_Employee_Invoked
 from Modules.Driving_Test import cmd_Driving_Test_Invoked
+from Modules.Employees import cmd_Employees_Invoked
 
 intents = discord.Intents.default()
 intents.members = True

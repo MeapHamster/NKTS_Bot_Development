@@ -205,6 +205,17 @@ Command_Whitelists = {
         'Exact Command': False
     },
 
+    'Employees' : {
+        'Roles' : [
+            # Use Role IDs
+        ],
+        'Users' : [
+            # Use Discord User IDs
+        ],
+        'All Users': True,
+        'Exact Command': True
+    },
+
     'Driving Test' : {
         'Roles' : [
             # Use Role IDs

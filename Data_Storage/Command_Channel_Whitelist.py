@@ -29,6 +29,12 @@ Command_Channel_Whitelists = {
             Channels['General']
         ]
     },
+    'Employees' : {
+        'SERVER_CHANNEL': True,
+        'CHANNELS': [
+            Channels['General']
+        ]
+    },
     'Driving Test' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
