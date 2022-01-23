@@ -51,7 +51,7 @@ async def cmd_Employees_Invoked(Variables):
         Training_String = ''
 
         for User in EmployeeList:
-            Employees_String = Employee_String + User + '/n'
+            Employees_String = Employees_String + User + '/n'
 
         for User in TrainingList:
             Training_String = Training_String + User + '/n'
