@@ -58,7 +58,7 @@ async def cmd_Employees_Invoked(Variables):
 
         embed = discord.Embed(
             title = 'NKTS Employee Tracker',
-            description = '**Employees:**\n<@!' + Employee_String + '\n\nTraining' + Training_String,
+            description = '**Employees:**\n<@!' + Employees_String + '\n\nTraining' + Training_String,
             colour = discord.Colour.gold()
         )
                 
