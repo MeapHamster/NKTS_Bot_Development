@@ -71,4 +71,8 @@ async def on_message(message):
     await cmd_Driving_Test_Invoked(Variables)
     await cmd_Employees_Invoked(Variables)
 
+<<<<<<< HEAD
 client.run('KEY REMOVED')
+=======
+client.run('key removed')
+>>>>>>> a051ca895c1d6c406c12b0a0e3527b290a9a80d6
