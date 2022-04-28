@@ -77,7 +77,7 @@ Command_Channel_Whitelists = {
             Channels['Bot Commands']
         ]
     },
-    'Link Roblox' : {
+    'Link Account' : {
         'SERVER_CHANNEL': True,
         'CHANNELS': [
             Channels['Bot Commands']

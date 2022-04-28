@@ -100,7 +100,7 @@ async def cmd_Add_Employee_Invoked(Variables):
             else:
                 embed = discord.Embed(
                     title = 'NKTS Employee Tracker',
-                    description = 'This user has not verified their Roblox account!\nTry running `!Link Roblox` in <#865637391808724992>',
+                    description = 'This user has not verified their Account account!\nTry running `!Link Account` in <#865637391808724992>',
                     colour = discord.Colour.red()
                 )
                 embed.set_footer(text = '• NKTS Employee Tracker')

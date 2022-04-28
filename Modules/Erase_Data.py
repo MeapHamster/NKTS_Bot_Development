@@ -30,7 +30,7 @@ async def cmd_Erase_Data_Invoked(Variables):
                     }
                 )
                 Discord_User_ID_ARCHIVE = Card['desc'].split('Discord_User_ID:')[1].split('\n')[0]
-                Roblox_Username_ARCHIVE = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
+                Account_Username_ARCHIVE = Card['desc'].split('Account_Username:')[1].split('\n')[0]
                 Email_Address_ARCHIVE = Card['desc'].split('Email_Address:')[1].split('\n')[0]
                 embed = discord.Embed(
                     title = 'User Data Erased',
@@ -39,13 +39,13 @@ async def cmd_Erase_Data_Invoked(Variables):
                 )
                 embed.set_footer(text = '• NKTS Secure Data')
                 embed.add_field(name = 'Discord User ID', value = Discord_User_ID_ARCHIVE, inline = False)
-                embed.add_field(name = 'Roblox Username', value = Roblox_Username_ARCHIVE, inline = False)
+                embed.add_field(name = 'Account Username', value = Account_Username_ARCHIVE, inline = False)
                 embed.add_field(name = 'Email Address', value = Email_Address_ARCHIVE, inline = False)
                 await Channel.send(embed = embed)
         if Found_User_Data_Card == False:
             embed = discord.Embed(
                 title = 'You blew up the internet.',
-                description = "We couldn't find a data card for you! Try running `!Link Roblox` in <#865637391808724992>",
+                description = "We couldn't find a data card for you! Try running `!Link Account` in <#865637391808724992>",
                 colour = discord.Colour.gold()
             )
             embed.set_footer(text = '• NKTS')

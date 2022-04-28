@@ -28,7 +28,7 @@ async def cmd_Hours_User_Invoked(Variables):
         User_NAME = ''
         for Card in User_Data_Cards:
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == User_ID:
-                User_NAME = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
+                User_NAME = Card['desc'].split('Account_Username:')[1].split('\n')[0]
         Hour_Logs_Cards = json.loads(
             requests.request(
                 'GET',

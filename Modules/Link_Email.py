@@ -21,7 +21,7 @@ async def cmd_Link_Email_Invoked(Variables):
         Found_Card = False
         for Card in User_Data_Cards:
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == str(message.author.id):
-                Username = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
+                Username = Card['desc'].split('Account_Username:')[1].split('\n')[0]
                 Found_Card = True
         if Found_Card == True:
             embed = discord.Embed(
@@ -34,7 +34,7 @@ async def cmd_Link_Email_Invoked(Variables):
         else:
             embed = discord.Embed(
                 title = "Whoops!",
-                description = "You must verify your Roblox account before adding an email address. Use the command `!Link Roblox` in <#865637391808724992>.",
+                description = "You must verify your Account account before adding an email address. Use the command `!Link Account` in <#865637391808724992>.",
                 colour = discord.Colour.gold()
             )
             embed.set_footer(text = '• NKTS')

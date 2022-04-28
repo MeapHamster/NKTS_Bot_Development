@@ -107,7 +107,7 @@ Command_Whitelists = {
         'Exact Command': True
     },
 
-    'Link Roblox' : {
+    'Link Account' : {
         'Roles' : [
             # Use Role IDs
             763986008596414495, # Employee Role

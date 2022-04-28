@@ -24,7 +24,7 @@ from Modules.Hours_Clear import cmd_Hours_Clear_Invoked
 from Modules.Hours_Me import cmd_Hours_Me_Invoked
 from Modules.Hours_User import cmd_Hours_User_Invoked
 from Modules.Link import cmd_Link_Invoked
-from Modules.Link_Roblox import cmd_Link_Roblox_Invoked
+from Modules.Link_Account import cmd_Link_Account_Invoked
 from Modules.Link_Email import cmd_Link_Email_Invoked
 from Modules.Email import cmd_Email_Invoked
 from Modules.Verify_Code import cmd_Verify_Code_Invoked
@@ -59,7 +59,7 @@ async def on_message(message):
     await cmd_Hours_Clear_Invoked(Variables)
     await cmd_Hours_Me_Invoked(Variables)
     await cmd_Link_Invoked(Variables)
-    await cmd_Link_Roblox_Invoked(Variables)
+    await cmd_Link_Account_Invoked(Variables)
     await cmd_Link_Email_Invoked(Variables)
     await cmd_Email_Invoked(Variables)
     await cmd_Verify_Code_Invoked(Variables)

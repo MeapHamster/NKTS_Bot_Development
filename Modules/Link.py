@@ -28,7 +28,7 @@ async def cmd_Link_Invoked(Variables):
             description = "",
             colour = discord.Colour.gold()
         )
-        embed.add_field(name = 'Roblox Username', value = "Use the `!Link Roblox` command in <#865637391808724992> to link your Roblox username to your Discord account", inline=False)
+        embed.add_field(name = 'Account Username', value = "Use the `!Link Account` command in <#865637391808724992> to link your Account username to your Discord account", inline=False)
         embed.add_field(name = 'Email Address', value = "Use the command `!Link Email` in my DMs to link your email address to your account", inline=False)
         embed.set_footer(text = 'Viewing Data:\nTo view your data, use the command !View Data in my DMs\nUpdating Data:\nTo update data, contact an administrator\nErasing Data:\nTo erase your data, use the command !Erase Data in my DMs\n\n• NKTS')
         await DM_Channel.send(embed = embed)

@@ -30,7 +30,7 @@ async def cmd_Hour_Reduction_Invoked(Variables):
         for Card in User_Data_Cards:
             if Card['desc'].split('Discord_User_ID:')[1].split('\n')[0] == str(message.author.id):
                 Data_Card_Found = True
-                Username = Card['desc'].split('Roblox_Username:')[1].split('\n')[0]
+                Username = Card['desc'].split('Account_Username:')[1].split('\n')[0]
         if Data_Card_Found == True:
             Hour_Reduction_Cards = json.loads(
                 requests.request(
@@ -70,4 +70,4 @@ async def cmd_Hour_Reduction_Invoked(Variables):
             await message.author.add_roles(discord.utils.get(message.guild.roles, name = "Reduced Hours"))
             await Channel.send(embed = embed)
         else:
-            await Error(Channel, 'Data Card not found. Please run !Link Roblox in the bot commands channel.')
+            await Error(Channel, 'Data Card not found. Please run !Link Account in the bot commands channel.')
