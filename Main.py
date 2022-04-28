@@ -71,4 +71,4 @@ async def on_message(message):
     await cmd_Driving_Test_Invoked(Variables)
     await cmd_Employees_Invoked(Variables)
 
-client.run('ODI5NDc5MTI3MTg1NzUyMDk0.YG4uog.0FOEMiZKJ7WyDfGpwGHbcufMFBI')
+client.run('key removed')
